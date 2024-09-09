@@ -58,7 +58,7 @@ while(value):
         print(f"This is my score {program_score}")
         print(f"These are ties or null points and the number is {ties}")
         cont_game=input("Do you wanna play more (y/n)?")
-        if cont_game=="y":
+        if cont_game=="y"or "yes":
             continue
         else:
             print("It was my pleasure serving you my lord")
