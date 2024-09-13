@@ -5,25 +5,28 @@ def intro():
     print("If your tired type stacs and you will exit to the window of statistics")
 intro()
 value=True
-score=0
-program_score=0
-ties=0
+SCORE=0
+PROGRAM_SCORE=0
+TIES=0
 def space():
     print("  ")
     print("  ")
 def rots():
+    global TIES
     print("Its a tie!")
     space()
-    ties+=1
+    TIES+=1
 def win():
+    global SCORE
     print("You Win")
     space()
-    score+=1
+    SCORE+=1
 def loose():
+    global PROGRAM_SCORE
     print("You loose, I Win!!!!!!")
     print(selected+" is what i chose")
     space()
-    program_score+=1
+    PROGRAM_SCORE+=1
 def konga():
         if selected == 'paper':
             loose()
@@ -53,13 +56,13 @@ while(value):
     elif choice == "stacs":
         print("Here are the statistics")
         space()
-        print(f"Your score is {score}")
-        print(f"This is my score {program_score}")
-        print(f"These are ties or null points and the number is {ties}")
+        print(f"Your score is {SCORE}")
+        print(f"This is my score {PROGRAM_SCORE}")
+        print(f"These are ties or null points and the number is {TIES}")
+        space()
         cont_game=input("Do you wanna play more (y/n)?")
-        if cont_game=="y"or "yes":
+        if cont_game=="y":
             continue
-        else:
+        elif cont_game=="n":
             print("It was my pleasure serving you my lord")
-            space()
             break
