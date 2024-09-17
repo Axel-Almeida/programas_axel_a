@@ -8,23 +8,29 @@ value=True
 SCORE=0
 PROGRAM_SCORE=0
 TIES=0
+def stars(mess):
+    print(f"**********{mess}*****")
 def space():
     print("  ")
     print("  ")
 def rots():
     global TIES
-    print("Its a tie!")
+    t="Its a tie!"
+    stars(t)
     space()
     TIES+=1
 def win():
     global SCORE
-    print("You Win")
+    t="You Win"
+    stars(t)
     space()
     SCORE+=1
 def loose():
     global PROGRAM_SCORE
-    print("You loose, I Win!!!!!!")
-    print(selected+" is what i chose")
+    t="You loose, I Win!!!!!!"
+    stars(t)
+    z=selected+" is what i chose"
+    stars(z)
     space()
     PROGRAM_SCORE+=1
 def konga():
@@ -54,7 +60,8 @@ while(value):
     elif choice == 'scissors':
         troya()
     elif choice == "stacs":
-        print("Here are the statistics")
+        stzs="Here are the statistics"
+        stars(stzs)
         space()
         print(f"Your score is {SCORE}")
         print(f"This is my score {PROGRAM_SCORE}")
@@ -64,5 +71,7 @@ while(value):
         if cont_game=="y":
             continue
         elif cont_game=="n":
-            print("It was my pleasure serving you my lord")
+            do="It was my pleasure serving you my lord"
+            stars(do)
+            space()
             break
