@@ -1,4 +1,4 @@
-#this are examples from the websites in the assigment
+""" #this are examples from the websites in the assigment
 empty_list=[]
 todo_list=['Learn Python List','How to manage List elements']
 numbers=[1,3,2,7,9,4]
@@ -149,4 +149,12 @@ integers.remove(5)
 integers.remove(27)
 print(integers)
 integers.pop()
-print(integers)
+print(integers) """
+
+#pop, remove, del
+list_fruit=["mango","strawberry","apple","melon"]
+del list_fruit[0]
+print(list_fruit)
+lsit_nams=["john","ron","jerry"]
+lsit_nams.append("george")
+print(lsit_nams)
