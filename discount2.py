@@ -56,7 +56,6 @@ while(value):
             sub_tax()
             payment_tax()
     elif custal<50:
-        print(day_of_week)
         if day_of_week == 1 or day_of_week == 2:
             sub_less()
             fg=int(input("Doy you want to continue shopping or iniciate form of payment? (1/2):"))
