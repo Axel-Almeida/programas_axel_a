@@ -1,4 +1,4 @@
-#this are examples from the websites in the assigment
+""" #this are examples from the websites in the assigment
 empty_list=[]
 todo_list=['Learn Python List','How to manage List elements']
 numbers=[1,3,2,7,9,4]
@@ -53,17 +53,17 @@ print(numbers)
 
 cities = ['New York', 'Beijing', 'Cairo', 'Mumbai', 'Mexico']
 result = cities.index('Mumbai')
-print(result)
+print(result) """
 
 cities = ['New York', 'Beijing', 'Cairo', 'Mumbai', 'Mexico']
-city = 'Osaka'
+city = 'New York'
 if city in cities:
     result = cities.index(city)
     print(f"The {city} has an index of {result}.")
 else:
     print(f"{city} doesn't exist in the list.")
 
-#class work about lists begins now
+""" #class work about lists begins now
 list1=[]
 
 #homogenous list
@@ -158,3 +158,4 @@ print(list_fruit)
 lsit_nams=["john","ron","jerry"]
 lsit_nams.append("george")
 print(lsit_nams)
+ """
