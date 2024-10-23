@@ -5,7 +5,7 @@ from weather import cels_from_fahr
 
 
 
- 
+
 
 def test_cels_from_fahr():
     assert cels_from_fahr(-25) == approx(-31.66667)
@@ -15,5 +15,3 @@ def test_cels_from_fahr():
 # Call the main function that is part of pytest so that the
 # computer will execute the test functions in this file.
 pytest.main(["-v", "--tb=line", "-rN", __file__])
-
-
