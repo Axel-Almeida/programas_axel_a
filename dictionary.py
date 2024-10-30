@@ -31,4 +31,5 @@ def main():
 
     display_contact_info(contact_info)
 
-main()
+if _name_=="_main_":
+    main()
