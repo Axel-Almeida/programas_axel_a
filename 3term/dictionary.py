@@ -12,10 +12,10 @@ def local_contacts(filename):
             contacts[first_name]= [last_name, phone_number, emailaddres]
     return contacts
 
-def display_contact_info(contact_info):
+def display_contact_info(last_name, contact_info):
     if contact_info:
         print("Contact Information:\n")
-        print(f"Last Name: {contact_info[0]}")
+        print(f"Full Name: {contact_info[0]} {last_name}")
         print(f"Phone NUmber: {contact_info[1]}")
         print(f"Eamil Addres: {contact_info[2]}")
     else:
@@ -26,9 +26,9 @@ def main():
 
     contacts=local_contacts(filename)
 
-    first_name= input("Please enter the last name to look up:").strip()
-    contact_info= contacts.get(first_name)
+    last_name= input("Please enter the last name to look up:").strip()
+    contact_info= contacts.get(last_name)
 
-    display_contact_info(contact_info)
+    display_contact_info(last_name, contact_info)
 
 main()
